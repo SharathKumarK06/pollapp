@@ -1,4 +1,4 @@
-# Poll app
+# Polls app
 Polling app
 
 ## Installation
