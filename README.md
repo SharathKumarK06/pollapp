@@ -4,8 +4,8 @@ Polling app
 ## Installation
 - Create a directory and cd into it
 ```console
-$ mkdir pollapp
-$ cd pollapp
+$ mkdir myapp
+$ cd myapp
 ```
 
 - Clone this repository
@@ -20,8 +20,14 @@ $ source venv/bin/activate
 $ pip install -r pollapp/requirements.txt
 ```
 
-- Add app into project
-    Refer django docs
+- Add app into project: Add `pollsapp.apps.PollsappConfig` into `INSTALLED_APPS`
+  list in `settings.py` file in project directory `myapp`
+```python3
+...
+INSTALLED_APPS = [
+    'pollsapp.apps.PollsappConfig',
+...
+```
 
 - Run the app
 ```console
